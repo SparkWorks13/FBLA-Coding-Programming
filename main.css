@@ -1,0 +1,67 @@
+body {
+	background-color:  cornflowerblue;
+	text-align:  center;
+}
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+big {
+	color: white;
+	font-family:  Lucida console;
+	font-size: 5em;
+}
+b {
+	color: white;
+	font-family:  Lucida console;
+	font-size: 1.5em;
+}
+p {
+	color:  white;
+	font-family:  Verdana;
+}
+
+input[type=text] {
+	width: 300px;
+	height: 50px;
+	font-size: 1.5em;
+	font-family: Helvetica;
+}
+
+input[type=checkbox] {
+	width: 20px;
+	height: 20px;
+}
+
+input[type=submit] {
+	width: 100px;
+	height: 50px;
+	margin: 20px;
+	font-family: Verdana;
+	font-size: 1em;
+	background-color: lightcoral;
+}
+
+.help {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted lightgrey;
+	color: lightgrey;
+	margin: 5px;
+}
+
+.help .textHelp {
+	visibility: hidden;
+	width: 120px;
+	background-color: lightgrey;
+	color: black;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
+	position: absolute;
+	z-index: 1;
+}
+
+.help:hover .textHelp {
+	visibility: visible;
+}

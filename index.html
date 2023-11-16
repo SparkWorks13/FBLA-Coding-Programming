@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Attraction Search</title>
+		<link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+	</head>
+	<body>
+		<big>attractionSearch</big>
+		<br>
+		<b>A dictionary of obscure places pulled straight from the web.</b>
+		<br>
+		<b>Scraped from Atlas Obscura</b>
+		<!--flash display-->
+		{% for message in get_flashed_messages() %}
+		<p> {{message}} </p>
+		{% endfor %}		
+		<form action="search" method="post">
+			<!--help object-->
+			<div class='help'>?
+				<span class='textHelp'>Help: cities, states, and countries are all valid if spelled and formatted correctly!</span>
+			</div>
+			<br>
+			<input type="text" name="location" placeholder="City, State">
+			<br>
+			<p>Select search attributes below:</p>
+			<div class='help'>?
+				<span class='textHelp'>Help: select as many as you like! However, attractions are displayed based on if they meet all attribute requests, so too many selections may result in an unsuccessful search.</span>
+			</div>
+			<!--table containing checkboxes-->
+			<table><tr><td>
+			<p>Science:
+			<label class="science">
+				<input type="checkbox" name='scienceR'>
+			</label></p></td><td>
+			<p>History:
+			<label class="history">
+				<input type="checkbox" name='historyR'>
+			</label></p></td><td>
+			<p>Art:
+			<label class="art">
+				<input type="checkbox" name='artR'>
+			</label></p></td><td>
+			<p>Nature:
+			<label class="nature">
+				<input type="checkbox" name='natureR'>
+			</label></p></td><td>
+			<p>Entertainment:
+			<label class="entertainment">
+				<input type="checkbox" name='entertainmentR'>
+			</label></p></td></tr></table>
+			<br>
+			<input type="submit" value="SEARCH" id="search">
+		</form></body>
