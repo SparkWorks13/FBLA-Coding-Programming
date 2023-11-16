@@ -1,6 +1,8 @@
 # FBLA-Coding-Programming
 Catalog of various iterations of the code I wrote for the 2021-2022 FBLA Coding and Programming Competition.
 
+This was my junior year of high school, so at this point I'd been programming for about a year.
+
 The prompt for this year was to develop an application which would allow user to search for and filter attractions in a given area.
 
 **Regionals + States**
